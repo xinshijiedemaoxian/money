@@ -1,0 +1,220 @@
+
+/*初始化类*/
+@charset "UTF-8";
+html{
+    font-family: "Microsoft YaHei", Helvetica, sans-serif;
+    font-size: 20px;
+}
+html,body {
+    -webkit-touch-callout:none;
+    -webkit-text-size-adjust:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-user-select:none;
+    width: 100%;
+}
+body {
+    line-height: 1.5;
+    font-size: 0.75rem;
+    background-color: #fff;
+    outline: 0;
+}
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    border:0;
+    padding:0;
+    font-style:normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+@media only screen and (min-width: 320px) {
+    html {
+        /*font-size: 17.0666666px !important;*/
+        font-size: 17.5666666px !important;
+    }
+}
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 20px !important;
+    }
+}
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 21.33333333px !important;
+    }
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 21px !important;
+    }
+}
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 25.6px !important;
+    }
+}
+ul, li {
+    list-style: none;
+}
+p {
+    font-size: 0.7rem;
+    color: #757575;
+}
+a {
+    color: #0062cc;
+    text-decoration: none;
+    background-color: transparent;
+}
+textarea {
+    overflow: hidden;
+    resize: none;
+}
+button {
+    overflow: visible;
+}
+button,select {
+    text-transform: none;
+}
+button,input,select,textarea {
+    font: inherit;
+    color: inherit;
+}
+
+
+/*样式*/
+.page{
+    min-height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
+.img-wrap>img{
+    display: block;
+    width: 4.5rem;
+    margin: 0 auto;
+    padding: 2.1rem 0px 1.5rem 0px;
+}
+.video-wrap{
+    margin: 0px 0.5rem;
+    position: relative;
+    background-color: #ededed;
+}
+.video-wrap .col{
+    background-color: #222;
+    width: 1px;
+    height: 2rem;
+    position: absolute;
+}
+.video-wrap .row{
+    background-color: #222;
+    width: 3rem;
+    height: 1px;
+    position: absolute;
+}
+.colone,.rowone{
+    left: 0px;
+    top: 0px;
+}
+.coltwo,.rowtwo{
+    top: 0px;
+    right: 0px;
+}
+.colthree,.rowthree{
+    bottom: 0px;
+    left: 0px;
+}
+.colfour,.rowfour{
+    right: 0px;
+    bottom: 0px;
+}
+.video_fream{
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.video_fream>div{
+    width: 100%;
+    height: 9.2rem;
+    overflow: hidden;
+    position: relative;
+}
+.video_fream video{
+    width: 100%;
+    height: 9.2rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /*display: none;*/
+}
+.mask{position: absolute;width: 100%;height:9.2rem;left: 0;top:0;overflow: hidden;z-index: 11; opacity: 0;}
+.cover{position: absolute!important;width: 100%;height:9.2rem;left: 0;top:0;background: url("../images/cover.jpg") no-repeat center center/cover;overflow: hidden; z-index: 12;}
+.font_msg{
+    color: #000;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    line-height: 1.4rem;
+    padding: 0px 0.75rem;
+}
+.font_msg>span{
+    color: red;
+}
+.aboutme{
+    color: #dcdcdc;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+}
+.aLink{color: #dcdcdc;}
+.aboutme>span{
+    position: relative;
+}
+.aboutme>span:before{
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1px;
+    left: -1.5rem;
+    top: 50%;
+    background-color:#dcdcdc;
+}
+.aboutme>span:after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1px;
+    right: -1.5rem;
+    top: 50%;
+    background-color:#dcdcdc;
+}
+.read{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 0.75rem;
+}
+
+.footer{
+    bottom: 0.3rem;
+    left: 0px;
+    position: absolute;
+}
+.footerSt{
+    padding:0.3rem 0;
+    position: static;
+}
+.footerAb{
+    bottom: 0.3rem;
+    left: 0px;
+    position: absolute;
+}
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+#canvas{
+    width:100%;
+    height:100%;
+}

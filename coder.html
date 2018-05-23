@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>test</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+    	#content p{text-align: center;font-size:16px;line-height: 1.5;}
+    	.codeImg{padding-top:10%;}
+    	.codeImg img{width:80%;max-width: 430px;max-height:430px;}
+    </style>
+    <script type="text/javascript">
+    	window.onload= function(){
+    		footerLocation();
+        }
+        //底部定位
+        function footerLocation(){
+        	//获取footer元素
+            var footer=document.getElementsByTagName("footer");
+            //获取网页可见区域高度
+            var windowHeight=document.all ? document.getElementsByTagName("html")[0].offsetHeight : window.innerHeight;
+            //获取网页内容高度
+            var pageHeight=Math.max(windowHeight, document.getElementsByTagName("body")[0].scrollHeight); 
+
+            if(pageHeight>windowHeight){
+            	//网页内容超出可见区域，则底部内容跟随在所有内容之后
+                footer[0].classList.add("footerSt")
+            }else{          
+            	//网页内容小于可以见区域，则底部内容定位到底部
+                footer[0].classList.add("footerAb")
+            }
+        }
+
+    </script>
+</head>
+<body>
+	<div id="content">
+		<p class="codeImg">
+			<img src="http://djb.80h-tv.com/images/qrcode.jpg" title="长按识别二维码" alt="长按识别二维码" />
+		</p>
+		<p>
+			<span><strong>帝景吧</strong></span>
+		</p>
+		<p>
+			<span>以兴趣主题聚合志同道合者的互动平台</span>
+		</p>
+		<p style="text-align:center;">
+			<span>长按识别二维码</span>
+		</p>
+	</div>
+	<footer class="read">
+		素材来源于网络，版权归原作者所有
+	</footer>
+
+</body>
+</html>
+
