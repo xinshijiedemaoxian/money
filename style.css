@@ -196,7 +196,9 @@ button,input,select,textarea {
     color: #dcdcdc;
     font-size: 0.75rem;
 }
-
+.read a{
+    font-size: 0.75rem;color: #dcdcdc;
+}
 .footer{
     bottom: 0.3rem;
     left: 0px;
